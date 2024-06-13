@@ -1,2 +1,2 @@
-def back_to_head(n: int) -> int:
-    return n+1
+def add(x: float, y: float) -> float:
+    return x + y
