@@ -1,5 +1,5 @@
 import pytest
-from main import add, subtraction, multiplication, division
+from main import add
 
 
 def test_add():
