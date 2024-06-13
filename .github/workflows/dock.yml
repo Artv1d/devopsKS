@@ -23,12 +23,6 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build and push
-      id: docker_build
-      uses: docker/build-push-action@v2
-      with:
-        push: true
-        tags: artv1d/devopsKS:latest
-        file: Dockerfile
-
-    - name: Image digest
-      run: echo ${{ steps.docker_build.outputs.digest }}
+      run: |
+        docker build -t Artv1d/devops:pr-${{ github.event.number }} .
+        docker push Artv1d/devops:pr-${{ github.event.number }}
