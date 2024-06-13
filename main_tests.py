@@ -2,6 +2,9 @@ import pytest
 from main import back_to_head
 
 
+def test_dummy():
+    pass
+
 def test_back_to_head():
     assert back_to_head(123) == 321
     assert back_to_head(0) == 0
