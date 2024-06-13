@@ -27,5 +27,5 @@ jobs:
 
     - name: Build and push
       run: |
-        docker build -t Artv1d/devopsKS:ver-${{ github.event.number }} .
-        docker push Artv1d/devopsKS:ver-${{ github.event.number }}
+        docker build -t Artv1d/devopsks:ver-${{ github.event.number }} .
+        docker push Artv1d/devopsks:ver-${{ github.event.number }}
