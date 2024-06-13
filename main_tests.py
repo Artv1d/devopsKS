@@ -1,12 +1,12 @@
 import pytest
-from main import back_to_head
+from main import add, subtraction, multiplication, division
 
 
-def test_back_to_head():
-    assert back_to_head(23) == 24
-    assert back_to_head(0) == 1
-    assert back_to_head(11111) == 11112
-    assert back_to_head(89) == 90
+def test_add():
+    assert add(2, 3) == 5
+    assert add(-1, 1) == 0
+    assert add(0, 0) == 0
+    assert add(-1, -1) == -2
 
 if __name__ == "__main__":
     pytest.main()
